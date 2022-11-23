@@ -40,7 +40,7 @@ var (
 		Help:      "How many CVEs were deleted during sync with VMaaS",
 		Namespace: "vuln4shift",
 		Subsystem: "vmsync",
-		Name:      "cves_synced",
+		Name:      "cves_deleted",
 	})
 )
 
@@ -50,6 +50,7 @@ func GetMetricsPusher() *push.Pusher {
 		syncError,
 		vmaasRequestError,
 		cvesInsertedUpdated,
+		cvesDeleted,
 	)
 	pusher := push.New(utils.Cfg.PrometheusPushGateway, "vmsync").Gatherer(registry)
 
