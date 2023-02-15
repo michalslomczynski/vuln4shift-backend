@@ -170,7 +170,7 @@ objects:
               key: archive-writer-db-passwd
               name: vuln4shift-db-passwds
         - name: LOGGING_LEVEL
-          value: ${LOGGING_LEVEL}
+          value: "DEBUG"
         - name: KAFKA_BROKER_INCOMING_TOPIC
           value: ${KAFKA_BROKER_INCOMING_TOPIC}
         - name: KAFKA_PAYLOAD_TRACKER_TOPIC
@@ -518,7 +518,7 @@ parameters:
 
 # MANAGER CONFIG
 - name: AMS_ENABLED
-  value: "true"
+  value: "false"
 - name: AMS_API_URL
   value: "https://api.openshift.com"
 - name: AMS_API_PAGESIZE

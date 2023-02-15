@@ -84,10 +84,10 @@ type Config struct {
 }
 
 func init() {
-	initConfig()
+	InitConfig()
 }
 
-func initConfig() {
+func InitConfig() {
 	// Database config
 	if clowder.IsClowderEnabled() {
 		Cfg.DbHost = clowder.LoadedConfig.Database.Hostname

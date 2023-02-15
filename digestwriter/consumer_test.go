@@ -464,3 +464,9 @@ func TestProcessMessageUUID(t *testing.T) {
 	assert.Equal(t, "error", ptEvent.Status)
 	assert.Equal(t, "error updating cluster data", ptEvent.StatusMsg)
 }
+
+func TestT(t *testing.T) {
+	utils.InitConfig()
+
+	startPayloadTracker()
+}
